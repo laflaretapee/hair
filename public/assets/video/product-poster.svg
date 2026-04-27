@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1200" viewBox="0 0 1400 1200" fill="none">
+  <rect width="1400" height="1200" fill="#171210"/>
+  <rect width="1400" height="1200" fill="url(#bg)"/>
+  <ellipse cx="310" cy="280" rx="250" ry="210" fill="url(#glow)" opacity=".48"/>
+  <rect x="228" y="320" width="222" height="454" rx="76" fill="url(#bottle1)"/>
+  <rect x="506" y="258" width="246" height="540" rx="88" fill="url(#bottle2)"/>
+  <rect x="804" y="384" width="232" height="390" rx="72" fill="url(#bottle3)"/>
+  <rect x="592" y="192" width="72" height="72" rx="24" fill="#EFDCC7"/>
+  <text x="108" y="1024" fill="#FAF1E8" font-size="68" font-family="Georgia, serif">Product Poster</text>
+  <text x="108" y="1088" fill="#D7C5B7" font-size="30" font-family="Arial, sans-serif">Профессиональная продукция и материалы студии.</text>
+  <defs>
+    <linearGradient id="bg" x1="140" y1="104" x2="1218" y2="1032" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#241915"/>
+      <stop offset=".48" stop-color="#16110E"/>
+      <stop offset="1" stop-color="#2C211B"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(310 280) rotate(90) scale(210 250)">
+      <stop stop-color="#EFDCC7"/>
+      <stop offset="1" stop-color="#EFDCC7" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="bottle1" x1="228" y1="320" x2="450" y2="774" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FAEFE3"/>
+      <stop offset=".52" stop-color="#DDBA95"/>
+      <stop offset="1" stop-color="#9B6141"/>
+    </linearGradient>
+    <linearGradient id="bottle2" x1="506" y1="258" x2="752" y2="798" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F6E8D7"/>
+      <stop offset=".4" stop-color="#C78C5D"/>
+      <stop offset="1" stop-color="#7B432B"/>
+    </linearGradient>
+    <linearGradient id="bottle3" x1="804" y1="384" x2="1036" y2="774" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#EED0AB"/>
+      <stop offset=".5" stop-color="#B26D49"/>
+      <stop offset="1" stop-color="#563123"/>
+    </linearGradient>
+  </defs>
+</svg>

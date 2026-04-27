@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1200" viewBox="0 0 1600 1200" fill="none">
+  <rect width="1600" height="1200" fill="#181210"/>
+  <rect width="1600" height="1200" fill="url(#bg)"/>
+  <ellipse cx="390" cy="402" rx="300" ry="204" fill="url(#g1)" opacity=".5"/>
+  <ellipse cx="1168" cy="378" rx="366" ry="248" fill="url(#g2)" opacity=".38"/>
+  <ellipse cx="874" cy="846" rx="436" ry="282" fill="url(#g3)" opacity=".42"/>
+  <path d="M120 694C286 560 427 514 584 532C753 551 816 703 958 726C1100 749 1298 642 1480 436" stroke="url(#wave1)" stroke-width="168" stroke-linecap="round"/>
+  <path d="M176 774C334 637 488 603 624 622C767 642 842 760 954 782C1065 805 1222 741 1384 564" stroke="url(#wave2)" stroke-width="84" stroke-linecap="round" opacity=".78"/>
+  <text x="112" y="1038" fill="#FAF1E8" font-size="72" font-family="Georgia, serif">Color Flow Poster</text>
+  <text x="112" y="1102" fill="#D7C5B7" font-size="30" font-family="Arial, sans-serif">Палитра оттенков для scroll-driven блока.</text>
+  <defs>
+    <linearGradient id="bg" x1="178" y1="64" x2="1412" y2="1082" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2A1D17"/>
+      <stop offset=".5" stop-color="#17110F"/>
+      <stop offset="1" stop-color="#2E211A"/>
+    </linearGradient>
+    <radialGradient id="g1" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(390 402) rotate(90) scale(204 300)">
+      <stop stop-color="#EAD7C4"/>
+      <stop offset="1" stop-color="#EAD7C4" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="g2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1168 378) rotate(90) scale(248 366)">
+      <stop stop-color="#C47F56"/>
+      <stop offset="1" stop-color="#C47F56" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="g3" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(874 846) rotate(90) scale(282 436)">
+      <stop stop-color="#E9C79E"/>
+      <stop offset="1" stop-color="#E9C79E" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="wave1" x1="120" y1="694" x2="1480" y2="436" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#5E3625"/>
+      <stop offset=".34" stop-color="#F0D6BA"/>
+      <stop offset=".66" stop-color="#D39A68"/>
+      <stop offset="1" stop-color="#A75D42"/>
+    </linearGradient>
+    <linearGradient id="wave2" x1="176" y1="774" x2="1384" y2="564" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F6E9DA"/>
+      <stop offset=".38" stop-color="#DAB792"/>
+      <stop offset="1" stop-color="#C17452"/>
+    </linearGradient>
+  </defs>
+</svg>
+
