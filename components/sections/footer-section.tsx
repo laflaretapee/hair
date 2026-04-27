@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Container } from "@/components/ui/container";
+import { assetPath } from "@/lib/utils";
 import type { SiteContent } from "@/data/site-content";
 
 type FooterSectionProps = {
@@ -13,7 +14,7 @@ export function FooterSection({ content }: FooterSectionProps) {
         <div className="footer-panel glass-card">
           <div className="footer-brand">
             <Image
-              src="/assets/brand/logo.webp"
+              src={assetPath("/assets/brand/logo.webp")}
               alt="Логотип студии Риды Яшиной"
               width={72}
               height={72}

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { MotionVideo } from "@/components/media/motion-video";
+import { assetPath } from "@/lib/utils";
 import type { SiteContent } from "@/data/site-content";
 
 type HeroSectionProps = {
@@ -11,7 +12,7 @@ function TrustIcon({ kind }: { kind: SiteContent["hero"]["trust"][number]["icon"
   if (kind === "yandex-award") {
     return (
       <Image
-        src="/assets/trust/yandex-award.webp"
+        src={assetPath("/assets/trust/yandex-award.webp")}
         alt=""
         width={28}
         height={28}
@@ -23,7 +24,7 @@ function TrustIcon({ kind }: { kind: SiteContent["hero"]["trust"][number]["icon"
   if (kind === "yandex-maps") {
     return (
       <Image
-        src="/assets/trust/yandex-maps.webp"
+        src={assetPath("/assets/trust/yandex-maps.webp")}
         alt=""
         width={28}
         height={28}
@@ -64,7 +65,7 @@ export function HeroSection({ content, video }: HeroSectionProps) {
           <div className="hero-copy">
             <div className="brand-badge">
               <Image
-                src="/assets/brand/logo.webp"
+                src={assetPath("/assets/brand/logo.webp")}
                 alt="Логотип студии Риды Яшиной"
                 width={64}
                 height={64}
