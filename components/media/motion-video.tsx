@@ -1,6 +1,6 @@
 "use client";
 
-import { cn } from "@/lib/utils";
+import { assetPath, cn } from "@/lib/utils";
 import { useEffect, useRef, useState } from "react";
 import { useMotionMode } from "./use-motion-mode";
 
@@ -76,7 +76,7 @@ export function MotionVideo({
   }, [onVideoRef, shouldLoad, mounted, isMobile, isReducedMotion]);
 
   const posterOnly = isReducedMotion || (mounted && isMobile && mobilePosterOnly);
-  const fallbackPoster = mounted && isMobile && mobilePoster ? mobilePoster : poster;
+  const fallbackPoster = assetPath(mounted && isMobile && mobilePoster ? mobilePoster : poster);
 
   return (
     <div
@@ -95,11 +95,11 @@ export function MotionVideo({
           muted={muted}
           playsInline
           preload="metadata"
-          poster={poster}
+          poster={assetPath(poster)}
           aria-label={decorative ? undefined : ariaLabel ?? alt}
           aria-hidden={decorative || undefined}
         >
-          {shouldLoad ? sources.map((source) => <source key={source.src} src={source.src} type={source.type} />) : null}
+          {shouldLoad ? sources.map((source) => <source key={source.src} src={assetPath(source.src)} type={source.type} />) : null}
         </video>
       ) : null}
     </div>

@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import { Container } from "@/components/ui/container";
 import { useMotionMode } from "@/components/media/use-motion-mode";
+import { assetPath } from "@/lib/utils";
 import type { SiteContent } from "@/data/site-content";
 
 type ColorFlowSectionProps = {
@@ -11,10 +12,10 @@ type ColorFlowSectionProps = {
 };
 
 const frameCount = 8;
-const firstFrame = "/assets/frames/color-flow/Abstract_Hair_Color_Pigment_Animation_001.jpg";
+const firstFrame = assetPath("/assets/frames/color-flow/Abstract_Hair_Color_Pigment_Animation_001.jpg");
 
 function framePath(index: number) {
-  return `/assets/frames/color-flow/Abstract_Hair_Color_Pigment_Animation_${String(index).padStart(3, "0")}.jpg`;
+  return assetPath(`/assets/frames/color-flow/Abstract_Hair_Color_Pigment_Animation_${String(index).padStart(3, "0")}.jpg`);
 }
 
 function drawCover(context: CanvasRenderingContext2D, image: HTMLImageElement, width: number, height: number) {
@@ -154,7 +155,7 @@ export function ColorFlowSection({ content }: ColorFlowSectionProps) {
     <section ref={sectionRef} className="site-section color-flow-section" aria-label="Color Flow">
       <div className="color-flow-backdrop" aria-hidden="true">
         {showMobileImage ? (
-          <img className="color-flow-frame-fallback" src="/assets/mobile/color.webp" alt="" />
+          <img className="color-flow-frame-fallback" src={assetPath("/assets/mobile/color.webp")} alt="" />
         ) : (
           <>
             <img className="color-flow-frame-fallback" src={firstFrame} alt="" />
